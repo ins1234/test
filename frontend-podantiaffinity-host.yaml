@@ -15,8 +15,7 @@ spec:
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
-          - topologyKey: kubernetes.io/hostname
-            labelSelector:
+          - labelSelector:
               matchLabels:
                 app: frontend
       containers:
